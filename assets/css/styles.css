@@ -1,0 +1,209 @@
+/**
+ *  Fonts
+ */
+/* @import url("https://fonts.googleapis.com/css2?family=Archivo&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Long+Cang&display=swap");
+
+/**
+ *  Global variables - fonts and color palette
+ */
+:root {
+    /* --primary-font: "Fira Sans Extra Condensed", "Verdana", sans-serif; */
+    --primary-font: "Special Gothic Condensed One", "Verdana", sans-serif;
+    /* --primary-font: "Special Gothic Expanded One", "Verdana", sans-serif; */
+    --secondary-font: "Archivo Black", "Verdana", sans-serif;
+    --tertiary-font: "Special Gothic Condensed One", "Verdana", sans-serif;
+    --chinese-font: "Long Cang", "Verdana", serif;
+
+    --bg-color: #000000;
+    --fg-color: #ffffff;
+    --accent-color: #f9d507;
+}
+
+/**
+ *  Base styles
+ */
+html,
+body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+
+    /* Hidden mobile elements */
+    .mobile-only {
+        display: none;
+    }
+}
+
+/**
+ *  Content Body
+ */
+.content-body {
+    margin: auto;
+    padding-top: 25vh;
+    width: 70%;
+
+    /* Accent colors */
+    .accent {
+        color: var(--accent-color);
+    }
+
+    /* Header container */
+    .header-container {
+        display: flex;
+        /* align-items: center; */
+        align-items: stretch;
+        gap: 30px;
+        padding-bottom: 2vh;
+
+        /* Color block */
+        .title-color-block {
+            background-color: var(--accent-color);
+            display: flex;
+            margin-bottom: 18px;
+            width: 100px;
+            /* padding: 10px 20px; */
+            /* flex-direction: column; */
+
+            /* span { */
+            /*     font-family: var(--chinese-font); */
+            /*     font-size: 4rem; */
+            /*     color: var(--bg-color); */
+            /* } */
+        }
+
+        /* Title container - name and details */
+        .title-container {
+            font-family: var(--primary-font);
+
+            h1 {
+                margin: 0;
+                font-size: 6rem;
+            }
+
+            /* Details container */
+            .details-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-style: italic;
+
+                .top-name {
+                    font-family: var(--secondary-font);
+                    font-size: 2rem;
+                }
+
+                .chinese {
+                    font-family: var(--chinese-font);
+                    font-size: 3rem;
+                    font-style: normal;
+                }
+
+                .tag {
+                    font-family: var(--tertiary-font);
+                    font-size: 1.8rem;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+
+    /* Links container */
+    .links-container {
+        padding-left: 130px;
+
+        .subhead {
+            font-family: var(--secondary-font);
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        .links-group {
+            font-family: var(--secondary-font);
+            line-height: 3rem;
+            margin-top: 2vh;
+
+            .link {
+                height: 3rem;
+
+                a {
+                    color: var(--fg-color);
+                    font-size: 1.75rem;
+                    text-decoration: none;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        font-size: 2rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**
+ *  Mobile view
+ */
+@media only screen and (max-width: 876px) {
+    /**
+     *  Hidden elements
+     */
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block !important;
+    }
+
+    /**
+     *  Content body
+     */
+    .content-body {
+        padding-top: 10vh;
+        width: 75%;
+
+        .header-container {
+            gap: 20px;
+            padding-bottom: 8vh;
+
+            /* Color block */
+            .title-color-block {
+                width: 20px;
+                margin-bottom: 0;
+            }
+
+            /* Title container */
+            .title-container {
+                .details-container {
+                    .top-name {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .tag {
+                    font-family: var(--tertiary-font);
+                    font-size: 1.4rem;
+                    font-style: italic;
+                }
+            }
+        }
+
+        .links-container {
+            padding-left: 40px;
+        }
+    }
+}
