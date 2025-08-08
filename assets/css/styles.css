@@ -111,6 +111,7 @@ body {
                 .top-name {
                     font-family: var(--secondary-font);
                     font-size: 2rem;
+                    text-transform: lowercase;
                 }
 
                 .chinese {
