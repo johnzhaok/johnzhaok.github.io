@@ -3,7 +3,7 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Cascadia+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Long+Cang&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap");
 
 
 /**
@@ -12,7 +12,7 @@
 :root {
     --primary-font: "Cascadia Mono", monospace;
     --secondary-font: "Fira Mono", monospace;
-    --chinese-font: "Long Cang", "Verdana", serif;
+    --chinese-font: "Noto Sans SC", sans-serif;
 
     --bg-color: #000000;
     --fg-color: #c4c4c4;
@@ -69,6 +69,10 @@ body {
         margin-right: -10px;
     }
 
+    .hidden {
+        display: none;
+    }
+
     /**
      *  Color block
      */
@@ -91,6 +95,7 @@ body {
             justify-content: space-between;
             padding: 10px 15px 15px 10px;
             font-style: italic;
+            line-height: 2rem;
 
             .top-name {
                 font-size: 2rem;
@@ -99,7 +104,7 @@ body {
 
             .chinese {
                 font-family: var(--chinese-font);
-                font-size: 2.2rem;
+                font-size: 2.4rem;
                 font-style: normal;
             }
 
@@ -171,15 +176,25 @@ body {
         }
 
         .color-block {
-            display: none;
+            background-image: none;
+            height: 35px;
+            width: 35px;
+            margin: auto;
         }
 
         .text-body {
+            padding-top: 2.5vh;
+
             .top-row {
                 display: block;
+                line-height: 1.5rem;
 
                 .top-name {
                     font-size: 1.2rem;
+                }
+
+                .chinese {
+                    font-size: 1.4rem;
                 }
 
                 .tag {

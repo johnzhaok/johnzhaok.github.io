@@ -8,15 +8,16 @@
 
     <link rel='icon' type='image/png' href='assets/images/favicon.png'>
     <link rel='stylesheet' href='assets/css/styles.css'>
+    <script src='assets/js/scripts.js'></script>
 </head>
 <body>
     <div class='content-body'>
-        <div class='color-block'></div>
+        <div id='colorBlockButton' class='color-block'></div>
 
         <div class='text-body'>
             <div class='top-row'>
-                <span class='top-name accent'>Kangzhi</span>
-                <!-- <span class='top-name accent chinese'>赵康志</span> -->
+                <span id='nameSwapEnglish' class='top-name accent'>Kangzhi</span>
+                <span id='nameSwapChinese' class='top-name accent chinese hidden'>赵康志</span>
 
                 <div class='tag'>
                     <span class='accent symbol secondary-font'>@</span>
@@ -24,7 +25,7 @@
                 </div>
             </div>
 
-            <h1 class='title'>John Zhao</h1>
+            <h1 id='mainTitle' class='title'>John Zhao</h1>
 
             <div class='links-container'>
                 <span class='subhead accent'>Links:</span>
