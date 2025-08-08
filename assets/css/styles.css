@@ -12,15 +12,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Long+Cang&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
 /**
  *  Global variables - fonts and color palette
  */
 :root {
     /* --primary-font: "Fira Sans Extra Condensed", "Verdana", sans-serif; */
-    --primary-font: "Special Gothic Condensed One", "Verdana", sans-serif;
+    /* --primary-font: "Special Gothic Condensed One", "Verdana", sans-serif; */
     /* --primary-font: "Special Gothic Expanded One", "Verdana", sans-serif; */
-    --secondary-font: "Archivo Black", "Verdana", sans-serif;
-    --tertiary-font: "Special Gothic Condensed One", "Verdana", sans-serif;
+    --primary-font: "Fira Mono", "Verdana", sans-serif;
+    --primary-font: "Cascadia Mono", "Verdana", sans-serif;
+    /* --secondary-font: "Archivo Black", "Verdana", sans-serif; */
+    --secondary-font: "Cascadia Mono", "Verdana", sans-serif;
+    /* --tertiary-font: "Special Gothic Condensed One", "Verdana", sans-serif; */
+    --tertiary-font: "Cascadia Mono", "Verdana", sans-serif;
     --chinese-font: "Long Cang", "Verdana", serif;
 
     --bg-color: #000000;
