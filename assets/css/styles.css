@@ -17,11 +17,11 @@
     --bg-color: #000000;
     --fg-color: #c4c4c4;
     --highlight-color: #ffffff;
-    --accent-color1: #689d6a;
-    /* --accent-color1: #8ec07c; */
-    /* --accent-color1: #83a598; */
-    --accent-color2: #fabd2f;
-    /* --accent-color2: #f9d507; */
+    --accent-color: #689d6a;
+    /* --accent-color: #8ec07c; */
+    /* --accent-color: #83a598; */
+    /* --accent-color: #fabd2f; */
+    /* --accent-color: #f9d507; */
 }
 
 /**
@@ -34,8 +34,6 @@ body {
     height: 100%;
     width: 100%;
     margin: auto;
-    /* justify-content: center; */
-    /* overflow: hidden; */
 }
 
 /**
@@ -50,20 +48,14 @@ body {
     padding-top: 20vh;
     margin: auto;
 
-    /**
-     *  Accent colors
-     */
     .accent {
-        color: var(--accent-color1);
+        color: var(--accent-color);
     }
 
     .secondary-font {
         font-family: var(--secondary-font);
     }
 
-    /**
-     *  Accent symbols
-     */
     .symbol {
         font-size: 2rem;
         margin-right: -10px;
@@ -77,9 +69,8 @@ body {
      *  Color block
      */
     .color-block {
-        background-color: var(--accent-color1);
-        background-image: linear-gradient(var(--accent-color1), var(--bg-color));
-        /* background-image: linear-gradient(var(--accent-color1), var(--accent-color1), var(--bg-color)); */
+        background-color: var(--accent-color);
+        background-image: linear-gradient(var(--accent-color), var(--bg-color));
         display: flex;
         margin-bottom: -85px;
         width: 140px;
