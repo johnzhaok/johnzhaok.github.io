@@ -15,4 +15,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (colorBlockButton !== null) {
         colorBlockButton.addEventListener("click", switchNames);
     }
+
+    console.log("Hello!");
 });
