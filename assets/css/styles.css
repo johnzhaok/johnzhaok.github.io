@@ -80,11 +80,14 @@ body {
      *  Text content - name, tag, and links
      */
     .text-body {
+        padding-top: 5px;
+
         .top-row {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 10px 15px 15px 10px;
+            padding-left: 5px;
+            padding-right: 10px;
             font-style: italic;
             line-height: 2rem;
 
@@ -107,6 +110,8 @@ body {
         .title {
             color: var(--highlight-color);
             font-size: 6rem;
+            padding-top: 15px;
+            padding-bottom: 30px;
             margin: 0;
         }
     }
@@ -116,8 +121,7 @@ body {
      *  Links container
      */
     .links-container {
-        padding-left: 15px;
-        padding-top: 4vh;
+        padding-left: 5px;
 
         .subhead {
             font-size: 1.5rem;
