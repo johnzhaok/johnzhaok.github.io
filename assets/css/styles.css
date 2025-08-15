@@ -44,7 +44,7 @@ body {
     display: flex;
     align-items: stretch;
     justify-content: center;
-    gap: 80px;
+    gap: 60px;
     padding-top: 20vh;
     margin: auto;
 
@@ -70,9 +70,9 @@ body {
      */
     .color-block {
         background-color: var(--accent-color);
-        background-image: linear-gradient(var(--accent-color), var(--bg-color));
+        /* background-image: linear-gradient(var(--accent-color), var(--bg-color)); */
         display: flex;
-        margin-bottom: -85px;
+        margin-bottom: 185px;
         width: 140px;
     }
 
@@ -82,12 +82,15 @@ body {
     .text-body {
         padding-top: 5px;
 
+        .indent {
+            padding-left: 5px;
+            padding-right: 10px;
+        }
+
         .top-row {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-left: 5px;
-            padding-right: 10px;
             font-style: italic;
             line-height: 2rem;
 
@@ -114,42 +117,43 @@ body {
             padding-bottom: 30px;
             margin: 0;
         }
-    }
 
+        .links-container {
+            display: flex;
+            justify-content: space-between;
 
-    /**
-     *  Links container
-     */
-    .links-container {
-        padding-left: 5px;
+            .links-group {
+                line-height: 3rem;
 
-        .subhead {
-            font-size: 1.5rem;
-            font-style: italic;
-        }
+                .subhead {
+                    font-size: 1.5rem;
+                    font-style: italic;
+                }
 
-        .links-group {
-            line-height: 3rem;
-            margin-top: 2vh;
+                .link {
+                    height: 3rem;
 
-            .link {
-                height: 3rem;
+                    a {
+                        color: var(--fg-color);
+                        font-size: 1.6rem;
+                        text-decoration: none;
+                        transition: all 0.2s;
 
-                a {
-                    color: var(--fg-color);
-                    font-size: 1.6rem;
-                    text-decoration: none;
-                    transition: all 0.2s;
-
-                    &:hover {
-                        color: var(--highlight-color);
-                        font-size: 1.7rem;
-                        cursor: pointer;
+                        &:hover {
+                            color: var(--highlight-color);
+                            font-size: 1.7rem;
+                            cursor: pointer;
+                        }
                     }
+                }
+
+                &.right-align {
+                    text-align: right;
                 }
             }
         }
     }
+
 }
 
 
@@ -180,6 +184,10 @@ body {
         .text-body {
             padding-top: 2.5vh;
 
+            .indent {
+                padding: 0;
+            }
+
             .top-row {
                 display: block;
                 line-height: 1.5rem;
@@ -202,14 +210,14 @@ body {
             }
 
             .links-container {
-                padding: 3vh 0 0 0;
-
-                .subhead {
-                    font-size: 1rem;
-                }
+                display: block;
 
                 .links-group {
-                    margin-top: 1vh;
+                    padding-bottom: 2rem;
+
+                    .subhead {
+                        font-size: 1rem;
+                    }
 
                     .link {
                         height: 2rem;
@@ -217,6 +225,10 @@ body {
                         a {
                             font-size: 1rem;
                         }
+                    }
+
+                    &.right-align {
+                        text-align: center;
                     }
                 }
             }
